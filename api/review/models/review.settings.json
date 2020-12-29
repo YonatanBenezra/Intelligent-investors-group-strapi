@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "Customers",
+  "info": {
+    "name": "Review"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "data": {
+      "type": "component",
+      "repeatable": true,
+      "component": "data.data"
+    }
+  }
+}
