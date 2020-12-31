@@ -2,16 +2,18 @@
   "defaultConnection": "default",
   "connections": {
     "default": {
-      "connector": "bookshelf",
+      "connector": "mongoose",
       "settings": {
-        "client": "sqlite",
-        "host": "${process.env.DATABASE_HOST || '127.0.0.1'}",
+        "host": "${process.env.DATABASE_HOST || 'intelligent-investors-g-shard-00-00.rfzcn.mongodb.net'}",
+        "srv": "${process.env.DATABASAE_SRV || true", 
         "port": "${process.env.DATABASE_PORT || 27017}",
         "database": "${process.env.DATABASE_NAME || 'strapi'}",
-        "username": "${process.env.DATABASE_USERNAME || ''}",
-        "password": "${process.env.DATABASE_PASSWORD || ''}"
+        "username": "${process.env.DATABASE_USERNAME || 'Dizy'}",
+        "password": "${process.env.DATABASE_PASSWORD || 'XUGQ8rkQBdlG3TCI'}"
       },
-      "options": {}
+      "options": {
+        "ssl": true
+      }
     }
   }
 }
